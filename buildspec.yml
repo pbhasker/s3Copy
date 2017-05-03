@@ -1,0 +1,14 @@
+version: 0.1
+
+phases:
+  build:
+    commands:
+      - echo Build started on `date`
+      - echo Compiling the Python code...
+      - s3copy
+  post_build:
+    commands:
+      - echo Build completed on `date`
+artifacts:
+  files:
+    - s3copy
