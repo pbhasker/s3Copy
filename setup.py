@@ -3,7 +3,8 @@ from setuptools import setup
 
 
 setup(
-    name='myapp',    # This is the name of your PyPI-package.
+    name='s3copy',
     version='0.1',
-    packages=['myapp']    # Update the version number for new releases
+    packages=['s3copy']
+    scripts=['bin/s3copy'],
 )
