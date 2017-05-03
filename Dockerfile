@@ -4,7 +4,7 @@ FROM ubuntu:latest
 RUN apt-get update -y
 RUN apt-get install python -y
 
-ADD s3copy /tmp/
+ADD s3copy setup.py setup.cfg /tmp/s3copy/
 
 RUN ls /tmp/
 RUN ls
