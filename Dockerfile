@@ -1,6 +1,7 @@
 FROM python:2.7.13
 
-ADD s3copy setup.py setup.cfg /tmp/dest/
+ADD s3copy /tmp/dest/s3copy
+ADD setup.py setup.cfg /tmp/dest/
 
 RUN find /tmp/
 
