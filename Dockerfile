@@ -1,5 +1,7 @@
 FROM python:2.7.13
 
-ADD s3copy setup.py setup.cfg /tmp/s3copy/
+ADD s3copy setup.py setup.cfg /tmp/dest/
 
-RUN python /tmp/s3copy/setup.py install
+RUN find /tmp/
+
+RUN python /tmp/dest/setup.py install
