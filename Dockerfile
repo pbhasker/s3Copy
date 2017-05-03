@@ -4,6 +4,6 @@ FROM ubuntu:latest
 RUN apt-get update -y
 RUN apt-get install python -y
 
-ADD s3copy s3copy
+ADD s3copy /tmp/s3copy
 
-RUN python s3copy/setup.py install
+RUN python /tmp/s3copy/setup.py install
