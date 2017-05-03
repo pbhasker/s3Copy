@@ -6,5 +6,5 @@ setup(
     name='s3copy',
     version='0.1',
     packages=['s3copy'],
-    scripts=['bin/s3copy'],
+    scripts=['bin/s3copy', 'bin/notifyComplete'],
 )
