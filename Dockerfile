@@ -5,4 +5,4 @@ ADD setup.py setup.cfg /tmp/dest/
 
 RUN find /tmp/
 
-RUN python /tmp/dest/setup.py install
+RUN cd /tmp/dest/ && python setup.py install
